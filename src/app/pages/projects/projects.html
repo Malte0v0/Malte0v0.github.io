@@ -1,15 +1,5 @@
 <ol>
   @for (project of projects; track project.id) {
-    <li>
-      <h3>{{ project.name }}</h3>
-      <p>{{ project.description }}</p>
-      <ul>
-        @for (tech of project.stack; track tech) {
-          <li>
-            {{ tech }}
-          </li>
-        }
-      </ul>
-    </li>
+    <li><app-project-card [project]="project" /></li>
   }
 </ol>
