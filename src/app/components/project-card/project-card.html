@@ -1,0 +1,9 @@
+<h3>{{ project().name }}</h3>
+<p>{{ project().description }}</p>
+<ul>
+  @for (tech of project().stack; track tech) {
+    <li>
+      {{ tech }}
+    </li>
+  }
+</ul>
