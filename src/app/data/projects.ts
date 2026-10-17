@@ -4,13 +4,25 @@ export const PROJECTS: Project[] = [
   {
     id: 1,
     name: "Chatbot",
-    description: "Chatbot for the livestreaming platform Twitch",
+    repoUrl: "https://github.com/Malte0v0/Twitch-Chat-Bot",
+    summary: "Chatbot for the livestreaming platform Twitch that lets viewers look up news, stock prices, weather information, set and receive reminders, and many other things. It integrates multiple APIs such as Google News, Yahoo Finance and OpenWeatherMap. User data is stored in SQLite, and API responses are cached. Used daily in a real Twitch chat.",
+    description: "",
     stack: ["Node.js", "TypeScript", "SQLite"],
   },
   {
     id: 2,
     name: "Customer Service .NET",
-    description: "Port of the Customer Service written in Java",
+    repoUrl: "https://github.com/Malte0v0/Customer-Service-NET",
+    summary: "Port of the Customer Service from Java to C# with the goal of learning the fundamentals of C# and .NET.",
+    description: "",
     stack: ["ASP.NET"],
+  },
+  {
+    id: 3,
+    name: "Portfolio Website",
+    repoUrl: "https://github.com/Malte0v0/Portfolio",
+    summary: "Portfolio website made with the goal of learning Angular and design with Figma. Ongoing project.",
+    description: "",
+    stack: ["Angular"],
   }
 ];
