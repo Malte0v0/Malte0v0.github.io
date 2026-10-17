@@ -40,7 +40,8 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/Portfolio/"
             },
             "development": {
               "optimization": false,
@@ -66,10 +67,7 @@
           "builder": "@angular/build:unit-test"
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "baseHref": "/Portfolio/"
-          }
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
