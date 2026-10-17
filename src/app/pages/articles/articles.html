@@ -1,1 +1,5 @@
-<p>articles works!</p>
+<ul>
+  @for (article of articles; track article.slug) {
+    <li><app-article-card [article]="article" /></li>
+  }
+</ul>

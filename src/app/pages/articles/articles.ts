@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import { ARTICLES } from '../../data/articles';
+import { ArticleCard } from '../../components/article-card/article-card';
 
 @Component({
-  imports: [],
+  imports: [ArticleCard],
   selector: 'app-articles',
   styleUrl: './articles.css',
   templateUrl: './articles.html',
 })
-export class Articles {}
+export class Articles {
+  articles = ARTICLES;
+}
