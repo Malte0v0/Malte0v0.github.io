@@ -1,8 +1,6 @@
 @if (article()) {
   <app-article-card [article]="article()!" />
-  @for (text of article()?.content; track $index) {
-  <p>{{ text }}</p>
-  }
+  <div [innerHTML]="articleContent()"></div>
 } @else {
   <p>Article not found</p>
 }

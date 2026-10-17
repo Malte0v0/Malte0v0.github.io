@@ -3,5 +3,5 @@ export interface Article {
   title: string,
   date: Date,
   summary: string,
-  content: string[],
+  content: string,
 }
