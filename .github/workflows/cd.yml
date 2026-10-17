@@ -1,0 +1,43 @@
+name: CD
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+      - name: Use Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc 
+          cache: 'npm'
+      - run: npm ci
+      - run: npx ng test --watch=false
+      - run: npx ng build
+      - run: cp dist/portfolio-app/browser/index.html dist/portfolio-app/browser/404.html
+      - name: Upload build output
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist/portfolio-app/browser
+
+
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to pages
+        id: deployment
+        uses: actions/deploy-pages@v5
