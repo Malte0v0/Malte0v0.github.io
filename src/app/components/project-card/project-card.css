@@ -4,8 +4,7 @@
   gap: var(--space-3);
   padding: var(--space-4);
   background: var(--color-surface);
-  max-width: 600px;
-  border-radius: var(--space-2);
+  border-radius: var(--space-3);
 }
 
 ul {
