@@ -1,7 +1,11 @@
-<h1>Portfolio</h1>
-<nav>
-  <a routerLink="/">Home</a>
-  <a routerLink="/projects">Projects</a>
-  <a routerLink="/articles">Articles</a>
-</nav>
-<router-outlet />
+<header>
+  <h1>Malte</h1>
+  <nav>
+    <a [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" routerLink="/">Home</a>
+    <a routerLinkActive="active" routerLink="/projects">Projects</a>
+    <a routerLinkActive="active" routerLink="/articles">Articles</a>
+  </nav>
+</header>
+<main>
+  <router-outlet />
+</main>
