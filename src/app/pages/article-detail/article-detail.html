@@ -1,6 +1,6 @@
 @if (article()) {
-  <app-article-card [article]="article()!" />
-  <div [innerHTML]="articleContent()"></div>
+  <app-article-card class="articleHeader" [article]="article()!" />
+  <div class="articleContent" [innerHTML]="articleContent()"></div>
 } @else {
   <p>Article not found</p>
 }
