@@ -22,8 +22,7 @@ li {
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: var(--space-1);
-  padding-right: var(--space-1);
-  color: var(--color-text);
+  color: var(--color-muted);
 }
 
 h3 {
@@ -40,10 +39,19 @@ h3 {
   text-decoration: underline;
 }
 
-p {
+.summary {
   font-size: var(--font-size-body);
   margin: 0;
   color: var(--color-muted);
+}
+
+.dates {
+  font-size: var(--font-size-body-small);
+  color: var(--color-muted);
+}
+
+p {
+  margin: 0;
 }
 
 a {
