@@ -35,7 +35,7 @@ export const PROJECTS: Project[] = [
     dateStarted: new Date("2026-05-14"),
     dateCompleted: new Date("2026-09-16"),
     summary: "School project part of the Java Backend 1 and 2 courses. The linked repo consists of a booking service and frontend, but it also integrates with a review service.",
-    description: "Containerized all services and a React frontend with Docker Compose.",
+    description: "## Containerized all services and a React frontend with Docker Compose.",
     stack: ["Java", "Spring Boot", "Docket", "React"],
   }
 ];
