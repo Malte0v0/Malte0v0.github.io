@@ -15,6 +15,7 @@
   --font-size-header: 32px;
   --font-size-title: 24px;
   --font-size-body: 16px;
+  --font-size-body-small: 14px;
 }
 
 body {
@@ -22,4 +23,9 @@ body {
   margin: 0;
   background: var(--color-bg);
   color: var(--color-text);
+}
+
+.markdown h3,
+.markdown h2 {
+  margin: 0;
 }

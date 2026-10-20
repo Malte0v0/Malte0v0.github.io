@@ -1,6 +1,7 @@
 import { Component, computed, input } from '@angular/core';
 import { PROJECTS } from '../../data/projects';
 import { ProjectCard } from '../../components/project-card/project-card';
+import { marked } from 'marked';
 
 @Component({
   imports: [ProjectCard],
@@ -13,5 +14,12 @@ export class ProjectDetail {
   project = computed(() => {
     const projectId: number = parseInt(this.id());
     return PROJECTS.find(p => p.id === projectId);
+  });
+  projectDescription = computed(() => {
+    const rawDesc = this.project()?.description
+    if (rawDesc) {
+      return marked.parse(rawDesc, { async: false });
+    }
+    return undefined;
   });
 }
