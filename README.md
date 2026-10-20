@@ -2,7 +2,7 @@
 
 My personal portfolio website where I show some of my projects and write articles.
 
-**Live site:** https://malte0v0.github.io/Portfolio/
+**Live site:** https://malte0v0.github.io
 
 ![Home page screenshot](docs/home-page.jpeg)
 
