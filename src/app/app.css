@@ -35,7 +35,3 @@ a {
 .active {
   color: var(--color-accent);
 }
-
-@media (max-width: 600px) {
-
-}
