@@ -1,6 +1,6 @@
 @if (project()) {
   <app-project-card class="projectHeader" [project]="project()!" />
-  <div class="projectDescription" [innerHTML]="projectDescription()"></div>
+  <div class="projectDescription markdown" [innerHTML]="projectDescription()"></div>
 } @else {
   <p>Project not found</p>
 }
