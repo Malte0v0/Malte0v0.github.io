@@ -48,7 +48,7 @@ Update and validation, switching to a real database, global exception handling, 
   {
     id: 3,
     name: "Portfolio Website",
-    repoUrl: "https://github.com/Malte0v0/Portfolio",
+    repoUrl: "https://github.com/Malte0v0/Malte0v0.github.io",
     dateStarted: new Date("2026-10-14"),
     summary: "Portfolio website made with the goal of learning Angular and design with Figma. Ongoing project.",
     description: `
