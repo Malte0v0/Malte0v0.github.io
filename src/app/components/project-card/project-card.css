@@ -48,6 +48,7 @@ h3 {
 }
 
 .dates {
+  font-family: var(--font-mono);
   font-size: var(--font-size-body-small);
   color: var(--color-muted);
 }
