@@ -14,4 +14,5 @@ export class ProjectDetail {
     const projectId: number = parseInt(this.id());
     return PROJECTS.find(p => p.id === projectId);
   });
+  projectDescription = computed(() => this.project()?.description);
 }
