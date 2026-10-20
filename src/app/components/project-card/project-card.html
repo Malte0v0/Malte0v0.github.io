@@ -1,6 +1,6 @@
 <h3><a routerLink="/projects/{{project().id}}">{{ project().name }}</a></h3>
-<a class="repo-link" href="{{project().repoUrl}}">Git Repository</a>
-<span class="dates">
+<a class="repo-link mono" href="{{project().repoUrl}}">Git Repository</a>
+<span class="dates mono">
 @if (project().dateCompleted) {
   <p>{{ project().dateStarted | date }} → {{ project().dateCompleted | date }}</p>
 } @else {
@@ -10,7 +10,7 @@
 <p class="summary">{{ project().summary }}</p>
 <ul>
   @for (tech of project().stack; track tech) {
-    <li>
+    <li class="mono">
       {{ tech }}
     </li>
   }
