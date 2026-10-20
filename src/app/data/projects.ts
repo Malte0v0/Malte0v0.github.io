@@ -24,5 +24,13 @@ export const PROJECTS: Project[] = [
     summary: "Portfolio website made with the goal of learning Angular and design with Figma. Ongoing project.",
     description: "",
     stack: ["Angular"],
+  },
+  {
+    id: 4,
+    name: "Microservice Architecture",
+    repoUrl: "https://github.com/Malte0v0/Java-Backend-1",
+    summary: "School project part of the Java Backend 1 and 2 courses. The linked repo consists of a booking service and frontend, but it also integrates with a review service.",
+    description: "Containerized all services and a React frontend with Docker Compose.",
+    stack: ["Java", "Spring Boot", "Docket", "React"],
   }
 ];
