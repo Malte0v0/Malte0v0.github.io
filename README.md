@@ -26,8 +26,8 @@ I built this site to learn Angular and to practise UI design in Figma. It's an o
 
 ## Planned
 
-- [ ] Change browser tab title
-- [ ] Create a custom favicon
+- [x] Change browser tab title
+- [x] Create a custom favicon
 - [ ] Add meta description
 - [ ] Add tags
 - [ ] Add on hover animations
