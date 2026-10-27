@@ -12,7 +12,6 @@ import { Profile } from '../../models/profile';
 export class PrivateHome {
   key = input.required<string>();
   profile = httpResource<Profile>(() => ({
-    url: URL + "profile",
-    headers: { "X-Access-Key": this.key() },
+    url: URL + "profile?key=" + this.key(),
   }));
 }
