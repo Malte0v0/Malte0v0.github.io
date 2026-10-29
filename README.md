@@ -28,8 +28,11 @@ I built this site to learn Angular and to practise UI design in Figma. It's an o
 
 - [x] Change browser tab title
 - [x] Create a custom favicon
+- [x] Add a private home page
+- [ ] Use my own domain
 - [ ] Add meta description
 - [ ] Add tags
 - [ ] Add on hover animations
 - [ ] Add a footer
-- [ ] Use my own domain
+- [ ] Add multiple languages
+- [ ] Add a light mode (default based on browser settings)
